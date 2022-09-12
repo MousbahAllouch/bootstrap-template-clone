@@ -1,10 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 .hero-heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 104px;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 15%;
+    padding-right: 15%;
     background-color: #2C3E50;
 }
 .hero-button{
@@ -13,9 +19,45 @@
     color: white;
     font-weight: bold;
     border-width: 0ch;
+    margin-right: 30px;
 }
 
 h1 {
     color: white;
     font-size: 28;
+}
+
+h3 {
+    color: white;
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+.hero-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1abc9c;
+    height: 680px;
+}
+
+.bootstrap-start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1320;
+    height: 486.53;
+    
+}
+
+.avatar-img {
+    width: 240px;
+    height: 254.53;
+}
+
+.avatar-text {
+    color: white;
+    font-size: 64px;
+    margin-top: 48px;
+    text-align: center;
 }
