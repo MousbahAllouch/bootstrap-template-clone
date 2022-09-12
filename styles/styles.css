@@ -61,3 +61,27 @@ h3 {
     margin-top: 48px;
     text-align: center;
 }
+
+.portfolio-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px;
+    width: 100%;
+}
+
+.portfolio-heading {
+    color: #2C3E50;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 72px;
+}
+
+.prtfolio-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 700px;
+    background-color: #1abc9c;
+}
