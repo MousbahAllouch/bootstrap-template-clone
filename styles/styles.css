@@ -81,7 +81,14 @@ h3 {
 .prtfolio-card {
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
+    justify-content: space-between;
+    width: 74%;
     height: 700px;
-    background-color: #1abc9c;
+}
+
+.portfolio-img {
+    width: 400px;
+    height: 288.88px;
+    border-radius: 10px;
+    
 }
