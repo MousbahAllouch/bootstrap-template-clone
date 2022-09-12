@@ -231,11 +231,16 @@ input[type="text"] {
 }
 
 .warning-div {
-    height: 80px;
+    border-style: dashed;
+    border-color: black;
+    border-width: 0.2cm;
+    color: white;
+    font-size: 18px;
+    height: 110px;
     width: 100%;
-    background-color: rgb(255, 112, 112);
-    border-width:0.1cm;
-    border-color: red;
+    padding: 9px 25px;
+    background-color: rgb(247, 75, 75);
+    
 }
 
 
