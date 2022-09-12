@@ -1,99 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/styles.css" />
-</head>
-<body>
 
-    <!-- start hero nav -->
-    <div class="hero-heading">
-        <div>
-            <h1>START BOOTSTRAP</h1>
-        </div>
-        <div>
-            <button class="hero-button">PORTFOLIO</button>
-            <button class="hero-button">ABOUT</button>
-            <button class="hero-button">CONTACT</button>
-        </div>
-    </div>
-    <div class="hero-background">
-        <div class="bootstrap-start">
-            <img src="./images/avataaars.svg" class="avatar-img">
-            <p class="avatar-text">START BOOTSTRAP</p>
-            <h3>Graphic Artist - Web Designer - Illustrator</h3>
-        </div>
-    </div>
-    <!-- end hero nave -->
+let navButton1= document.getElementById("navbar-button1");
+let navButton2= document.getElementById("navbar-button2");
+let navButton3= document.getElementById("navbar-button3");
 
-    <!-- start portfolio -->
-    <div class="portfolio-section">
-        
-        <h4 class="portfolio-heading">PORTFOLIO</h4>
-        <div class="prtfolio-card">
-            <img src="/images/cabin.png" class="portfolio-img">
-            <img src="/images/cake.png" class="portfolio-img">
-            <img src="/images/circus.png" class="portfolio-img">
-            <img src="/images/cabin.png" class="portfolio-img">
-            <img src="/images/cake.png" class="portfolio-img">
-            <img src="/images/circus.png" class="portfolio-img">
-        </div>
-    </div>
-    <!-- end portfolio section -->
-
-    <!-- start about section -->
-    <div class="about-section">
-        <h1>ABOUT</h1>
-        <h1>______________</h1>
-        <div class="about-paragraph">
-            <div class="about-par-section">
-                <p class="about-text">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
-            </div>
-            <div class="about-par-section">
-                <p class="about-text">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
-            </div>
-            <div class="button-div">
-                <button class="about-button">Free Download</button>
-            </div>
-        </div>
-    </div>
-    <!-- end about section -->
-
-    <!-- start contact section -->
-    <div class="contact-section">
-        <h4 class="contact-heading">CONTACT ME</h4>
-        <h4>_____________________________</h4>
-        <div class="contact-forme">
-            <input type="text" placeholder="Full name"></br>
-            <input type="text" placeholder="Email address"></br>
-            <input type="number" placeholder="Phone number" class="phone-number"></br>
-            <input type="text" placeholder="Message" class="message">
-            <button class="send-button">Send</button>
-        </div>
-    </div>
-    <!-- end contact section -->
-
-    <div class="more-information more-information-mobile">
-        <div class="information">
-            <p class="info-heading">LOCATION</p>
-            <p class="info-parag">teslksdjfkls</br>hsdfh</p>
-        </div>
-        <div class="information">
-            <p class="info-heading">AROUND THE WEB</p>
-            <p class="info-parag">teslksdjfkls</br>hsdfh</p>
-        </div>
-        <div class="information">
-            <p class="info-heading">ABOUT FREELANCER</p>
-            <p class="info-parag">Freelance is a free to use, </br>MIT licensed Bootstrap theme created by Start Bootstrap .</p>
-        </div>
-    </div>
-    <!-- end more info section -->
-
-    <div class="copy-right-section">
-        <p class="copy-right-text">Copyright © Your Website 2022</p>
-    </div>
-</body>
-</html>
+navButton1.onmouseover = function(){
+    navButton1.style.color="#1abc9c"
+};
+navButton2.onmouseover = function(){
+    navButton2.style.color="#1abc9c"
+};
+navButton3.onmouseover = function(){
+    navButton3.style.color="#1abc9c"
+};
