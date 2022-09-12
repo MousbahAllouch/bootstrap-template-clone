@@ -95,7 +95,5 @@
     <div class="copy-right-section">
         <p class="copy-right-text">Copyright © Your Website 2022</p>
     </div>
-    
-    <script src="./javascript/index.js"></script>
 </body>
 </html>
