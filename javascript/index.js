@@ -22,9 +22,60 @@ function submitting(){
     let phoneNumber=document.getElementById("phone-number").value
     let message=document.getElementById("message").value
 
+    let emailValidation=false;
+    let phoneNumberValidation=false;
+    let fullNameValidation=false;
+    let messageValidation=false
+    
+    for (let i=0;i<email.length;i++){
+
+        // to check the email (contain "@" and have more than 3 char befor "@")
+        if(email[i]=="@"){
+            let resOfEmail=email.slice(i);
+            if(i>2 && resOfEmail.length>5){
+                emailValidation=true;
+            }
+        }
+
+        // here to check phone number 
+        if(i==3){
+            let strPhoneNumber=phoneNumber;
+            strPhoneNumber= strPhoneNumber.substring(0,4);
+            if(strPhoneNumber=="+961"){
+                phoneNumberValidation=true;
+            }
+            if(phoneNumberValidation && phoneNumber[4]=="3" && phoneNumber.length==11){
+                continue;
+            }
+            else if(phoneNumberValidation && phoneNumber[4]!="3" && phoneNumber.length==12){
+                continue;
+            }
+            else{
+                phoneNumberValidation=false;
+            }
+        }
+
+
+    }
+    
+    
     // to check the lenght of fullName
     if(fullName.length>5){
-        console.log(fullName)
+        fullNameValidation=true
     }
+
+    // to check the lenght of message
+    if(message.length>100){
+        messageValidation=true
+    }
+
+    if(emailValidation && fullNameValidation && phoneNumberValidation && messageValidation){
+       console.log("done") 
+    }
+    else{
+        
+    }
+    
+
     
 }
