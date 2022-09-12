@@ -69,8 +69,11 @@ function submitting(){
         messageValidation=true
     }
 
-    const validations = [phoneNumberValidation,fullNameValidation,
-                        emailValidation,messageValidation
+    const validations = [
+                        phoneNumberValidation,
+                        fullNameValidation,
+                        emailValidation,
+                        messageValidation
                         ];
 
     // to check if all validation is true
@@ -79,6 +82,23 @@ function submitting(){
     }
     else{
         warning.classList.add("warning-div");
+        // here to set warning for every error
+        for(i=0 ; i<5 ; i++){
+            if(validations[i]==false){
+                if (i==0){
+                    console.log("phone")
+                }
+                if (i==1){
+                    console.log("name")
+                }
+                if (i==2){
+                    console.log("email")
+                }
+                if (i==3){
+                    console.log("message")
+                }
+            }
+        }
         
     }
 
