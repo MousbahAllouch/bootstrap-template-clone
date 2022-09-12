@@ -77,16 +77,17 @@ function submitting(){
                         emailValidation,
                         messageValidation
                         ];
-
+    const ul = document.getElementById("ul");
     // to check if all validation is true
     if (fullNameValidation && emailValidation && phoneNumberValidation && messageValidation){
         warning.classList.remove("warning-div");
+        warning.remove("ul");
     }
     else{
         warning.classList.add("warning-div");
 
         // here to set warning for every error
-        const ul = document.getElementById("ul");
+        
         const li = document.createElement("li");
         // loop over every error and add it 
         for(i=0 ; i<5 ; i++){
