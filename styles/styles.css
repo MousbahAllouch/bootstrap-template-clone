@@ -220,7 +220,15 @@ input[type="text"] {
 }
 
 .copy-right-section {
-    
+    width: 100%;
+    height: 72PX;
+    background-color: #1a252f;
+    text-align: center;
+}
+
+.copy-right-text {
+    color: white;
+    padding: 30px;
 }
 
 
