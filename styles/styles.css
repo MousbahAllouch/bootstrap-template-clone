@@ -1,0 +1,21 @@
+.hero-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 104px;
+    padding-left: 300px;
+    padding-right: 300px;
+    background-color: #2C3E50;
+}
+.hero-button{
+    background-color: #2C3E50;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    border-width: 0ch;
+}
+
+h1 {
+    color: white;
+    font-size: 28;
+}
