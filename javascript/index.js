@@ -69,13 +69,9 @@ function submitting(){
         messageValidation=true
     }
 
-    if(emailValidation && fullNameValidation && phoneNumberValidation && messageValidation){
-       console.log("done") 
-    }
-    else{
-        
-    }
     
-
-    
+     
 }
+  
+
+
