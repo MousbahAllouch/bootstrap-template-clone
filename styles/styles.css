@@ -196,10 +196,34 @@ input[type="text"] {
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
-    height: 272,8px;
-    margin: 10px 20px;
+    height: 272px;
+    padding: 10px 10%;
     background-color: #2C3E50;
 }
+
+.information {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.info-heading {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+}
+
+.info-parag {
+    color: white;
+    font-size: 20px;
+}
+
+.copy-right-section {
+    
+}
+
+
 
 
 
