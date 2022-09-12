@@ -28,6 +28,7 @@ function submitting(){
     let fullNameValidation=false;
     let messageValidation=false
     
+
     for (let i=0;i<email.length;i++){
 
         // to check the email (contain "@" and have more than 3 char befor "@")
@@ -79,6 +80,7 @@ function submitting(){
 
     // to check if all validation is true
     if (fullNameValidation && emailValidation && phoneNumberValidation && messageValidation){
+        warning.classList.remove("warning-div");
     }
     else{
         warning.classList.add("warning-div");
