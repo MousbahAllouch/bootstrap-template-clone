@@ -146,6 +146,36 @@ h3 {
     text-align: center;
 }
 
+.contact-heading {
+    color: #2C3E50;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;    
+}
+
+.contact-forme {
+    display: block;
+    
+    margin: 50px 30%;
+    width: 780px;
+    height: 554px;
+    float: left;
+}
+
+input[type="text"] {
+    width: 746px;
+    height: 88px;
+    border-color: white;
+    margin: 10px;
+
+}
+.phone-number {
+    width: 746px;
+    height: 88px;
+    border-color: white;
+    margin: 10px;
+}
+
 
 
 
