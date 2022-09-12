@@ -257,6 +257,11 @@ input[type="text"] {
     .phone-number {
         width: 460px;
     }
+
+    h1 {
+        font-size: 44px;
+    }
+    
     
 
   } */
