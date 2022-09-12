@@ -63,8 +63,11 @@ h3 {
 }
 
 .portfolio-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 96px;
+    margin: 96px 0px;
     width: 100%;
 }
 
@@ -80,17 +83,16 @@ h3 {
 .prtfolio-card {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    height: 700px;
-    padding-left: 14%;
-    padding-right: 14%;
+    justify-content: space-around;
+    width: 73%;
+  
 }
 
 .portfolio-img {
     width: 400px;
     height: 288.88px;
     border-radius: 10px;
+    margin: 20px 0px;
 }
 
 .about-section {
@@ -100,7 +102,6 @@ h3 {
     background-color: #1abc9c;
     padding: 96px 0;
     width: 100%;
-    height: 580px;
 }
 
 .about-text {
@@ -115,7 +116,7 @@ h3 {
     justify-content: space-between;
     margin-top: 30px;
     width: 45%;
-    height: 166px;
+    
 }
 
 .about-par-section {
@@ -140,10 +141,11 @@ h3 {
 }
 
 .contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    height: 878px;
-    padding: 96px 0px;
-    text-align: center;
+    margin: 96px 0px;
 }
 
 .contact-heading {
@@ -154,11 +156,8 @@ h3 {
 }
 
 .contact-forme {
-    display: block;
-    margin: 50px 28%;
-    width: 780px;
-    height: 554px;
-    float: left;
+    display: flex;
+    flex-direction: column;
 }
 
 input[type="text"] {
@@ -166,7 +165,7 @@ input[type="text"] {
     width: 746px;
     height: 88px;
     border-width: 0;
-    border-bottom-width: 0.1cm ;
+    border-bottom-width: 0.05cm ;
     margin: 10px;
 
 }
@@ -174,7 +173,7 @@ input[type="text"] {
     width: 746px;
     height: 88px;
     border-width: 0;
-    border-bottom-width: 0.1cm ;
+    border-bottom-width: 0.05cm ;
     margin: 10px;
     font-size: 25px;
 }
@@ -237,25 +236,20 @@ input[type="text"] {
 
 
 
-/* 
+
 @media only screen and (max-width: 600px) {
     
-    .portfolio-section {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        padding: 96px;
-        width: 100%;
-        height: 1000px;
-    }
+    
 
     input[type="text"] {
     font-size: 25px;
-    width: 460px;
+    width: 350px;
     }
     .phone-number {
-        width: 460px;
+        width: 350px;
+    }
+    .test {
+        width: 350px;
     }
 
     h1 {
@@ -264,4 +258,4 @@ input[type="text"] {
     
     
 
-  } */
+  }
