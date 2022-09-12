@@ -82,12 +82,11 @@ function submitting(){
     }
     else{
         warning.classList.add("warning-div");
-        // here to set warning for every error
 
+        // here to set warning for every error
         const ul = document.getElementById("ul");
         const li = document.createElement("li");
-        
-
+        // loop over every error and add it 
         for(i=0 ; i<5 ; i++){
             if(validations[i]==false){
                 if (i==0){

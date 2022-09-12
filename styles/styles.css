@@ -233,7 +233,9 @@ input[type="text"] {
 .warning-div {
     height: 80px;
     width: 100%;
-    background-color: red;
+    background-color: rgb(255, 112, 112);
+    border-width:0.1cm;
+    border-color: red;
 }
 
 
