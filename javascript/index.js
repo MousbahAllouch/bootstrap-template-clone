@@ -96,15 +96,18 @@ function submitting(){
                     ul.appendChild(li);
                 }
                 if (i==1){
-                    console.log("name")
+                    
+                    const li = document.createElement("li");
                     li.appendChild(document.createTextNode("You Enter wrong Fullname!"));
                     ul.appendChild(li);
                 }
                 if (i==2){
+                    const li = document.createElement("li");
                     li.appendChild(document.createTextNode("You Enter wrong email!"));
                     ul.appendChild(li);
                 }
                 if (i==3){
+                    const li = document.createElement("li");
                     li.appendChild(document.createTextNode("You Enter wrong message!"));
                     ul.appendChild(li);
                 }
