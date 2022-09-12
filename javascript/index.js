@@ -1,5 +1,5 @@
 
-
+let warning=document.getElementById("warning")
 let navButton1= document.getElementById("navbar-button1");
 let navButton2= document.getElementById("navbar-button2");
 let navButton3= document.getElementById("navbar-button3");
@@ -69,8 +69,20 @@ function submitting(){
         messageValidation=true
     }
 
-    
-     
+    const validations = [phoneNumberValidation,fullNameValidation,
+                        emailValidation,messageValidation
+                        ];
+
+    // to check if all validation is true
+    if (fullNameValidation && emailValidation && phoneNumberValidation && messageValidation){
+        warning.classList.remove("warning-div");
+    }
+    else{
+        warning.classList.add("warning-div");
+        
+    }
+
+   
 }
   
 
