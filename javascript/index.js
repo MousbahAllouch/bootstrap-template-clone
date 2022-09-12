@@ -1,4 +1,4 @@
-
+// gettin buttons
 let warning=document.getElementById("warning")
 let navButton1= document.getElementById("navbar-button1");
 let navButton2= document.getElementById("navbar-button2");
@@ -78,6 +78,7 @@ function submitting(){
                         messageValidation
                         ];
     const ul = document.getElementById("ul");
+
     // to check if all validation is true
     if (fullNameValidation && emailValidation && phoneNumberValidation && messageValidation){
         warning.classList.remove("warning-div");
