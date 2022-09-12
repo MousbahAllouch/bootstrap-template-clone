@@ -21,6 +21,7 @@ function submitting(){
     let email=document.getElementById("email").value
     let phoneNumber=document.getElementById("phone-number").value
     let message=document.getElementById("message").value
+    let warning=document.getElementById("warning")
 
     let emailValidation=false;
     let phoneNumberValidation=false;
@@ -78,24 +79,34 @@ function submitting(){
 
     // to check if all validation is true
     if (fullNameValidation && emailValidation && phoneNumberValidation && messageValidation){
-        warning.classList.remove("warning-div");
     }
     else{
         warning.classList.add("warning-div");
         // here to set warning for every error
+
+        const ul = document.getElementById("ul");
+        const li = document.createElement("li");
+        
+
         for(i=0 ; i<5 ; i++){
             if(validations[i]==false){
                 if (i==0){
                     console.log("phone")
+                    li.appendChild(document.createTextNode("You Enter wrong phone Number!"));
+                    ul.appendChild(li);
                 }
                 if (i==1){
                     console.log("name")
+                    li.appendChild(document.createTextNode("You Enter wrong Fullname!"));
+                    ul.appendChild(li);
                 }
                 if (i==2){
-                    console.log("email")
+                    li.appendChild(document.createTextNode("You Enter wrong email!"));
+                    ul.appendChild(li);
                 }
                 if (i==3){
-                    console.log("message")
+                    li.appendChild(document.createTextNode("You Enter wrong message!"));
+                    ul.appendChild(li);
                 }
             }
         }
